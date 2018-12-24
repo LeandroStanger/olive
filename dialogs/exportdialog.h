@@ -35,6 +35,8 @@ private slots:
 
 	void on_compressionTypeCombobox_currentIndexChanged(int index);
 
+    void on_pushButton_3_clicked();
+
 private:
 	Ui::ExportDialog *ui;
 

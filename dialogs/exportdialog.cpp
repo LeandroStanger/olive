@@ -16,6 +16,7 @@
 #include "project/sequence.h"
 #include "io/exportthread.h"
 #include "playback/playback.h"
+#include "dialogs/exportvideoadvanced.h"
 #include "mainwindow.h"
 
 extern "C" {
@@ -570,4 +571,9 @@ void ExportDialog::on_compressionTypeCombobox_currentIndexChanged(int) {
 		ui->videobitrateSpinbox->setValue(100);
 		break;
 	}
+}
+
+void ExportDialog::on_pushButton_3_clicked() {
+    ExportVideoAdvanced eva(this, format_vcodecs.at(ui->vcodecCombobox->currentIndex()));
+    eva.exec();
 }

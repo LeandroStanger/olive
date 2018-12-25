@@ -1,4 +1,4 @@
-src/Olive opt/olive-editor
+src/olive-editor opt/olive-editor
 src/effects/* opt/olive-editor/effects/
 olive-editor.desktop usr/share/applications
 icons/* opt/olive-editor/icons/
